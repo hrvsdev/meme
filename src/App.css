@@ -99,10 +99,29 @@ main {
   padding: 3rem ;
   box-sizing: border-box;
   border-radius: 10px;
+  position: relative;
+}
+
+.top, .bottom{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 500;
+  background: var(--gradient-color);
+  background-clip: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top{
+  top: 70px;
+}
+
+.bottom{
+  bottom: 70px;
 }
 
 .image-box > img{
   border-radius: 10px;
   width: 100%;
 }
-
