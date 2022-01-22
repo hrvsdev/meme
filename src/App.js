@@ -4,7 +4,6 @@ import Main from './components/Main';
 import memes from "./components/memesData";
 import { useState } from "react";
 
-
 export default function App() {
   const [imgUrl, setImgUrl] = useState(false);
   const [topText, setTopText] = useState("");
