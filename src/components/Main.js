@@ -2,7 +2,7 @@ import memes from "./memesData";
 import {useState} from 'react'
 
 export default function Main() {
-  //We should pass callback function inside useState setter, if original and previous State is required to perform a function
+  // We should pass callback function inside useState setter, if original and previous State is required to perform a function
   const [imgUrl, setImgUrl] = useState(false);
   function handleClick(){
     setImgUrl(memes[Math.floor(Math.random() * memes.length)].url)
