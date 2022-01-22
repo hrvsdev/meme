@@ -1,22 +1,4 @@
-import memes from "./memesData";
-import { useState } from "react";
-
-export default function Main() {
-  const [imgUrl, setImgUrl] = useState(false);
-  const [topText, setTopText] = useState("");
-  const [bottomText, setBottomText] = useState("");
-  const handleClick = () => {
-    setImgUrl(memes[Math.floor(Math.random() * memes.length)].url);
-  };
-
-  const topChange = (e) => {
-    setTopText(e.target.value);
-  };
-
-  const bottomChange = (e) => {
-    setBottomText(e.target.value);
-  };
-
+export default function Main(props) {
   return (
     <main>
       <div className="wrapper">
@@ -25,26 +7,26 @@ export default function Main() {
             type="text"
             className="top-input textInput"
             placeholder="Enter top text"
-            value={topText}
-            onChange={topChange}
+            value={props.topText}
+            onChange={props.topChange}
           />
           <input
             type="text"
             className="bottom-input textInput"
             placeholder="Enter bottom text"
-            value={bottomText}
-            onChange={bottomChange}
+            value={props.bottomText}
+            onChange={props.bottomChange}
           />
         </div>
         <div className="button-box">
-          <button onClick={handleClick}>Generate New Random Meme</button>
+          <button onClick={props.handleClick}>Generate New Random Meme</button>
         </div>
       </div>
-      {imgUrl && (
+      {props.imgUrl && (
         <div className="image-box">
-          <h3 className="top">{topText.toUpperCase()}</h3>
-          <h3 className="bottom">{bottomText.toUpperCase()}</h3>
-          <img src={imgUrl} alt="" />
+          <h3 className="top">{props.topText.toUpperCase()}</h3>
+          <h3 className="bottom">{props.bottomText.toUpperCase()}</h3>
+          <img src={props.imgUrl} alt="" />
         </div>
       )}
     </main>
