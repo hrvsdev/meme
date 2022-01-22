@@ -42,8 +42,8 @@ export default function Main() {
       </div>
       {imgUrl && (
         <div className="image-box">
-          {topText && <h3 className="top">{topText}</h3>}
-          {bottomText && <h3 className="bottom">{bottomText}</h3>}
+          <h3 className="top">{topText}</h3>
+          <h3 className="bottom">{bottomText}</h3>
           <img src={imgUrl} alt="" />
         </div>
       )}
