@@ -27,6 +27,8 @@
 nav > .left{
   font-size: 1.15rem;
   font-weight: 600;
+  cursor: pointer;
+
 }
 
 main {
