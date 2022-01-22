@@ -16,9 +16,9 @@ export default function App() {
     setTopText(e.target.value);
   };
 
-  const bottomChange = (e) => {
+  function bottomChange(e) {
     setBottomText(e.target.value);
-  };
+  }
   return (
     <>
     <Header/>
