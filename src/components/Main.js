@@ -5,17 +5,17 @@ export default function Main() {
   const [imgUrl, setImgUrl] = useState(false);
   const [topText, setTopText] = useState("");
   const [bottomText, setBottomText] = useState("");
-  function handleClick() {
+  const handleClick = () => {
     setImgUrl(memes[Math.floor(Math.random() * memes.length)].url);
-  }
+  };
 
-  function topChange(e) {
+  const topChange = (e) => {
     setTopText(e.target.value);
-  }
+  };
 
-  function bottomChange(e) {
+  const bottomChange = (e) => {
     setBottomText(e.target.value);
-  }
+  };
 
   return (
     <main>
@@ -42,8 +42,8 @@ export default function Main() {
       </div>
       {imgUrl && (
         <div className="image-box">
-          <h3 className="top">{topText}</h3>
-          <h3 className="bottom">{bottomText}</h3>
+          <h3 className="top">{topText.toUpperCase()}</h3>
+          <h3 className="bottom">{bottomText.toUpperCase()}</h3>
           <img src={imgUrl} alt="" />
         </div>
       )}
