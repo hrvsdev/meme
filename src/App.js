@@ -13,9 +13,10 @@ export default function App() {
   };
 
   const textChange = (e) => {
+    const {name, value} = e.target
     setText((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
   };
 
