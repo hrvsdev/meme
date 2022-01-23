@@ -24,11 +24,10 @@
   color: white;
 }
 
-nav > .left{
+nav > .left {
   font-size: 1.15rem;
   font-weight: 600;
   cursor: pointer;
-
 }
 
 main {
@@ -88,38 +87,38 @@ main {
   background-position: right center;
 }
 
-.image-box{
+.image-box {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   border: 2px solid #b550e748;
-  padding: 3rem ;
+  padding: 3rem;
   box-sizing: border-box;
   border-radius: 10px;
   position: relative;
 }
 
-.top, .bottom{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.top,
+.bottom {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   position: absolute;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 500;
-  background: var(--gradient-color);
-  background-clip: var(--gradient-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.15rem;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: #ffffff;
 }
 
-.top{
+.top {
   top: 70px;
 }
 
-.bottom{
+.bottom {
   bottom: 70px;
 }
 
-.image-box > img{
+.image-box > img {
   border-radius: 10px;
   width: 100%;
 }
