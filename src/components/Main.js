@@ -7,14 +7,12 @@ export default function Main(props) {
             name="topText"
             className="top-input textInput"
             placeholder="Enter top text"
-            value={props.text.topText}
             onChange={props.textChange}
           />
           <input
             name="bottomText"
             className="bottom-input textInput"
             placeholder="Enter bottom text"
-            value={props.text.bottomText}
             onChange={props.textChange}
           />
         </div>
