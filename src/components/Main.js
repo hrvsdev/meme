@@ -4,18 +4,18 @@ export default function Main(props) {
       <div className="wrapper">
         <div className="input-box">
           <input
-            type="text"
+            name="topText"
             className="top-input textInput"
             placeholder="Enter top text"
-            value={props.topText}
-            onChange={props.topChange}
+            value={props.text.topText}
+            onChange={props.textChange}
           />
           <input
-            type="text"
+            name="bottomText"
             className="bottom-input textInput"
             placeholder="Enter bottom text"
-            value={props.bottomText}
-            onChange={props.bottomChange}
+            value={props.text.bottomText}
+            onChange={props.textChange}
           />
         </div>
         <div className="button-box">
@@ -24,8 +24,8 @@ export default function Main(props) {
       </div>
       {props.imgUrl && (
         <div className="image-box">
-          <h3 className="top">{props.topText.toUpperCase()}</h3>
-          <h3 className="bottom">{props.bottomText.toUpperCase()}</h3>
+          <h3 className="top">{props.text.topText.toUpperCase()}</h3>
+          <h3 className="bottom">{props.text.bottomText.toUpperCase()}</h3>
           <img src={props.imgUrl} alt="" />
         </div>
       )}
